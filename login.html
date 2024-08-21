@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เข้าสู่ระบบ</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(0, 204, 255);
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgb(131, 199, 255);
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #009ad6;
+            color: #ffffff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">เข้าสู่ระบบ/ลงทะเบียน</h2>
+    <div class="container">
+        
+        <form action="#">
+            <select name="category" id="category">
+                <option value="citizen">เลือกประเภท</option>
+                <option value="employee">ผู้สมัครงาน</option>
+                <option value="customer">สถานประกอบการ</option>
+            </select>
+            <input type="text" placeholder="เลขบัตรประชาชน">
+            <br>
+            <input type="password" placeholder="รหัสผ่าน">
+            <button type="submit">เข้าสู่ระบบ</button>
+            <br>
+
+        </form>
+        <p style="text-align:center ;"><a href="#">หากท่านยังไม่มีรหัสผู้ใช้งาน</a></p>
+        <br>
+        <button type="submit">สมัครสมาชิก</button>
+    </div>
+</body>
+</html>
